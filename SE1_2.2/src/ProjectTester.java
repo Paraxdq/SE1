@@ -1,13 +1,13 @@
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
-class ProjectTester {
+public class ProjectTester {
 	Project p1;
 	
-	@Test
-	void test() {
+	@Before
+	public void setUp() {
 		p1 = new Project(new String[][] { { "C", "D" }, { "A", "D" }, { "B", "D" }, {"A", "C"} });
 	}
 
