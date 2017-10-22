@@ -14,22 +14,22 @@ class ProjectTester {
 
 	@Test
 	public void test_1() {
-		assertTrue(p1.isSorted(new String[] { "A", "B", "C", "D" }));
+		assertTrue(p1.isWellSorted(new String[] { "A", "B", "C", "D" }));
 	}
 
 	@Test
 	public void test_2() {
-		assertFalse(p1.isSorted(new String[] { "A", "C", "D", "B" }));
+		assertFalse(p1.isWellSorted(new String[] { "A", "C", "D", "B" }));
 	}
 
 	@Test
 	public void test_3() {
-		assertFalse(p1.isSorted(new String[] { "A", "B", "A", "D" }));
+		assertFalse(p1.isWellSorted(new String[] { "A", "B", "A", "D" }));
 	}
 
 	@Test
 	public void test_4() {
-		assertTrue(p1.isSorted(new String[] { "B", "A", "C", "D" }));
+		assertTrue(p1.isWellSorted(new String[] { "B", "A", "C", "D" }));
 	}
 
 }
