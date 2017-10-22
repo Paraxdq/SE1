@@ -9,7 +9,6 @@ class ProjectTester {
 	@Test
 	void test() {
 		p1 = new Project(new String[][] { { "C", "D" }, { "A", "D" }, { "B", "D" }, {"A", "C"} });
-		
 	}
 
 	@Test
